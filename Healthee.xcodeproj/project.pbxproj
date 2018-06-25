@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		30623CD620E185C100E5A2B8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30623CD520E185C100E5A2B8 /* AppDelegate.swift */; };
-		30623CD820E185C200E5A2B8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30623CD720E185C200E5A2B8 /* ViewController.swift */; };
 		30623CDB20E185C200E5A2B8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30623CD920E185C200E5A2B8 /* Main.storyboard */; };
 		30623CDD20E185C300E5A2B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30623CDC20E185C300E5A2B8 /* Assets.xcassets */; };
 		30623CE020E185C300E5A2B8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30623CDE20E185C300E5A2B8 /* LaunchScreen.storyboard */; };
@@ -17,7 +16,6 @@
 /* Begin PBXFileReference section */
 		30623CD220E185C100E5A2B8 /* Healthee.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Healthee.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		30623CD520E185C100E5A2B8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		30623CD720E185C200E5A2B8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		30623CDA20E185C200E5A2B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		30623CDC20E185C300E5A2B8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		30623CDF20E185C300E5A2B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -54,14 +52,69 @@
 		30623CD420E185C100E5A2B8 /* Healthee */ = {
 			isa = PBXGroup;
 			children = (
-				30623CD520E185C100E5A2B8 /* AppDelegate.swift */,
-				30623CD720E185C200E5A2B8 /* ViewController.swift */,
-				30623CD920E185C200E5A2B8 /* Main.storyboard */,
-				30623CDC20E185C300E5A2B8 /* Assets.xcassets */,
-				30623CDE20E185C300E5A2B8 /* LaunchScreen.storyboard */,
-				30623CE120E185C300E5A2B8 /* Info.plist */,
+				30623CEC20E1865900E5A2B8 /* ModelControllers */,
+				30623CEB20E1865400E5A2B8 /* Models */,
+				30623CEA20E1864C00E5A2B8 /* ViewControllers */,
+				30623CE920E1863F00E5A2B8 /* Views */,
+				30623CE820E1862D00E5A2B8 /* Storyboards */,
+				30623CED20E1866900E5A2B8 /* Helpers */,
+				30623CE720E1860A00E5A2B8 /* Resources */,
 			);
 			path = Healthee;
+			sourceTree = "<group>";
+		};
+		30623CE720E1860A00E5A2B8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				30623CD520E185C100E5A2B8 /* AppDelegate.swift */,
+				30623CDC20E185C300E5A2B8 /* Assets.xcassets */,
+				30623CE120E185C300E5A2B8 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		30623CE820E1862D00E5A2B8 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				30623CD920E185C200E5A2B8 /* Main.storyboard */,
+				30623CDE20E185C300E5A2B8 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		30623CE920E1863F00E5A2B8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		30623CEA20E1864C00E5A2B8 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		30623CEB20E1865400E5A2B8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		30623CEC20E1865900E5A2B8 /* ModelControllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ModelControllers;
+			sourceTree = "<group>";
+		};
+		30623CED20E1866900E5A2B8 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,7 +188,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				30623CD820E185C200E5A2B8 /* ViewController.swift in Sources */,
 				30623CD620E185C100E5A2B8 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -282,7 +334,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2FG8T6Y42N;
-				INFOPLIST_FILE = Healthee/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Healthee/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -300,7 +352,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2FG8T6Y42N;
-				INFOPLIST_FILE = Healthee/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Healthee/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
