@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BTS-9r-Gqj">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Report View Controller-->
+        <scene sceneID="qGY-ev-ZqE">
+            <objects>
+                <viewController id="BTS-9r-Gqj" customClass="ReportViewController" customModule="Healthee" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="j4a-ak-vgb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="21" translatesAutoresizingMaskIntoConstraints="NO" id="HLp-gm-hzW">
+                                <rect key="frame" x="0.0" y="73" width="375" height="535"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Restaurant Name..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Sfk-sP-DeR">
+                                        <rect key="frame" x="28" y="0.0" width="319" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="WTw-Ax-KTd"/>
+                                        </constraints>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Date of observed problem..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yHl-Qw-Rd4">
+                                        <rect key="frame" x="28" y="51" width="319" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="rmv-6V-hl6"/>
+                                        </constraints>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Approximate time of problem..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eRN-84-eeK">
+                                        <rect key="frame" x="28" y="102" width="319" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="e12-3D-qfu"/>
+                                        </constraints>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Description of problem..." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="BJP-Ud-TbN">
+                                        <rect key="frame" x="28" y="153" width="319" height="331"/>
+                                        <color key="backgroundColor" red="0.9137254901960784" green="0.9137254901960784" blue="0.9137254901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pXf-p2-Div">
+                                        <rect key="frame" x="143.5" y="505" width="88" height="30"/>
+                                        <state key="normal" title="Submit Form"/>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="pXf-p2-Div" secondAttribute="bottom" constant="21" id="0kp-MV-2Ko"/>
+                                    <constraint firstItem="eRN-84-eeK" firstAttribute="width" secondItem="HLp-gm-hzW" secondAttribute="width" multiplier="0.85" id="Hyw-hK-YbY"/>
+                                    <constraint firstItem="yHl-Qw-Rd4" firstAttribute="width" secondItem="HLp-gm-hzW" secondAttribute="width" multiplier="0.85" id="WY4-nT-HKn"/>
+                                    <constraint firstItem="BJP-Ud-TbN" firstAttribute="width" secondItem="HLp-gm-hzW" secondAttribute="width" multiplier="0.85" id="bbI-ur-1oY"/>
+                                    <constraint firstItem="Sfk-sP-DeR" firstAttribute="width" secondItem="HLp-gm-hzW" secondAttribute="width" multiplier="0.85" id="yb0-qr-g4a"/>
+                                </constraints>
+                            </stackView>
+                            <tabBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1zI-01-xKY">
+                                <rect key="frame" x="0.0" y="618" width="375" height="49"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <items>
+                                    <tabBarItem title="Home" id="39Q-Fa-pkk"/>
+                                    <tabBarItem systemItem="favorites" id="onZ-87-o24"/>
+                                    <tabBarItem title="Report" id="K1z-Bc-Nsi"/>
+                                    <tabBarItem title="Learn" id="7Br-3w-eSL"/>
+                                </items>
+                            </tabBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Report a Restaurant" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cvw-QM-wa6">
+                                <rect key="frame" x="102" y="35" width="170" height="23"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.96470588235294119" green="0.96470588235294119" blue="0.96470588235294119" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="1zI-01-xKY" firstAttribute="top" secondItem="HLp-gm-hzW" secondAttribute="bottom" constant="10" id="8MX-vP-Xtd"/>
+                            <constraint firstItem="cvw-QM-wa6" firstAttribute="centerX" secondItem="w32-5L-xlm" secondAttribute="centerX" id="Ixk-QY-yN0"/>
+                            <constraint firstItem="HLp-gm-hzW" firstAttribute="leading" secondItem="w32-5L-xlm" secondAttribute="leading" id="XS4-Gm-TNZ"/>
+                            <constraint firstItem="1zI-01-xKY" firstAttribute="width" secondItem="j4a-ak-vgb" secondAttribute="width" id="b2j-A2-G6p"/>
+                            <constraint firstItem="w32-5L-xlm" firstAttribute="trailing" secondItem="HLp-gm-hzW" secondAttribute="trailing" id="bmr-1R-jU2"/>
+                            <constraint firstItem="cvw-QM-wa6" firstAttribute="top" secondItem="w32-5L-xlm" secondAttribute="top" constant="15" id="gfR-Yn-Jse"/>
+                            <constraint firstItem="1zI-01-xKY" firstAttribute="bottom" secondItem="w32-5L-xlm" secondAttribute="bottom" id="jdL-TP-Gwb"/>
+                            <constraint firstItem="1zI-01-xKY" firstAttribute="centerX" secondItem="w32-5L-xlm" secondAttribute="centerX" id="vpF-A0-8g3"/>
+                            <constraint firstItem="HLp-gm-hzW" firstAttribute="top" secondItem="cvw-QM-wa6" secondAttribute="bottom" constant="15" id="ySm-5S-Ff0"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="w32-5L-xlm"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zXA-zt-RbM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-290.39999999999998" y="40.929535232383813"/>
+        </scene>
+    </scenes>
+</document>

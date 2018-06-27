@@ -10,10 +10,6 @@
 		30623CD620E185C100E5A2B8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30623CD520E185C100E5A2B8 /* AppDelegate.swift */; };
 		30623CDD20E185C300E5A2B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30623CDC20E185C300E5A2B8 /* Assets.xcassets */; };
 		30623CE020E185C300E5A2B8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30623CDE20E185C300E5A2B8 /* LaunchScreen.storyboard */; };
-		748F213920E3FDB10023996B /* MapViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748F213820E3FDB10023996B /* MapViewViewController.swift */; };
-		748F213B20E40C440023996B /* LearnMoreSB.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 748F213A20E40C440023996B /* LearnMoreSB.storyboard */; };
-		748F213D20E441180023996B /* FavoritesSB.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 748F213C20E441180023996B /* FavoritesSB.storyboard */; };
-		748F213F20E4465C0023996B /* SearchSB.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 748F213E20E4465C0023996B /* SearchSB.storyboard */; };
 		30EC254B20E4415D005A5305 /* ReportSB.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30EC254A20E4415D005A5305 /* ReportSB.storyboard */; };
 		30EC254D20E446D6005A5305 /* ReportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30EC254C20E446D6005A5305 /* ReportViewController.swift */; };
 /* End PBXBuildFile section */
@@ -24,10 +20,6 @@
 		30623CDC20E185C300E5A2B8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		30623CDF20E185C300E5A2B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		30623CE120E185C300E5A2B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		748F213820E3FDB10023996B /* MapViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewViewController.swift; sourceTree = "<group>"; };
-		748F213A20E40C440023996B /* LearnMoreSB.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LearnMoreSB.storyboard; sourceTree = "<group>"; };
-		748F213C20E441180023996B /* FavoritesSB.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FavoritesSB.storyboard; sourceTree = "<group>"; };
-		748F213E20E4465C0023996B /* SearchSB.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SearchSB.storyboard; sourceTree = "<group>"; };
 		30EC254A20E4415D005A5305 /* ReportSB.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ReportSB.storyboard; sourceTree = "<group>"; };
 		30EC254C20E446D6005A5305 /* ReportViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -88,9 +80,6 @@
 			children = (
 				30EC254A20E4415D005A5305 /* ReportSB.storyboard */,
 				30623CDE20E185C300E5A2B8 /* LaunchScreen.storyboard */,
-				748F213A20E40C440023996B /* LearnMoreSB.storyboard */,
-				748F213C20E441180023996B /* FavoritesSB.storyboard */,
-				748F213E20E4465C0023996B /* SearchSB.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -105,7 +94,6 @@
 		30623CEA20E1864C00E5A2B8 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				748F213820E3FDB10023996B /* MapViewViewController.swift */,
 				30EC254C20E446D6005A5305 /* ReportViewController.swift */,
 			);
 			path = ViewControllers;
@@ -191,11 +179,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				30623CE020E185C300E5A2B8 /* LaunchScreen.storyboard in Resources */,
-				748F213F20E4465C0023996B /* SearchSB.storyboard in Resources */,
 				30623CDD20E185C300E5A2B8 /* Assets.xcassets in Resources */,
-				748F213D20E441180023996B /* FavoritesSB.storyboard in Resources */,
-				30623CDB20E185C200E5A2B8 /* Main.storyboard in Resources */,
-				748F213B20E40C440023996B /* LearnMoreSB.storyboard in Resources */,
 				30EC254B20E4415D005A5305 /* ReportSB.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -207,7 +191,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				748F213920E3FDB10023996B /* MapViewViewController.swift in Sources */,
 				30EC254D20E446D6005A5305 /* ReportViewController.swift in Sources */,
 				30623CD620E185C100E5A2B8 /* AppDelegate.swift in Sources */,
 			);
