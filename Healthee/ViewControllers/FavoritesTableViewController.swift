@@ -2,7 +2,7 @@
 //  FavoritesTableViewController.swift
 //  Healthee
 //
-//  Created by Dallin McConnell on 7/2/18.
+//  Created by Dallin McConnell on 7/12/18.
 //  Copyright © 2018 Dallin McConnell. All rights reserved.
 //
 
@@ -12,7 +12,10 @@ class FavoritesTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
     }
+
+    
 
     // MARK: - Table view data source
 
@@ -26,15 +29,15 @@ class FavoritesTableViewController: UITableViewController {
         return 0
     }
 
-    /*
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "FavoritesCell", for: indexPath)
 
         // Configure the cell...
 
         return cell
     }
-    */
+    
 
     /*
     // Override to support conditional editing of the table view.
