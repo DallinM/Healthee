@@ -18,17 +18,30 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="LogoForLaunch" translatesAutoresizingMaskIntoConstraints="NO" id="qZn-Tw-yhk">
-                                <rect key="frame" x="56" y="149" width="263" height="254"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="254" id="YIH-gL-UpU"/>
-                                    <constraint firstAttribute="width" constant="263" id="ZQw-Vw-hCm"/>
-                                </constraints>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Rectangle 22 Copy" translatesAutoresizingMaskIntoConstraints="NO" id="tWZ-E2-faT">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="633"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Rectangle 22" translatesAutoresizingMaskIntoConstraints="NO" id="pxR-Bt-kXJ">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="598"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Group 5" translatesAutoresizingMaskIntoConstraints="NO" id="Tuu-Uu-rif">
+                                <rect key="frame" x="67" y="108" width="240" height="255"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="qZn-Tw-yhk" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="129" id="ivZ-m0-J8M"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="pxR-Bt-kXJ" secondAttribute="bottom" constant="69" id="5vX-Un-x8z"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="tWZ-E2-faT" secondAttribute="bottom" constant="34" id="Ah2-aw-xFH"/>
+                            <constraint firstItem="tWZ-E2-faT" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Ije-3D-C7A"/>
+                            <constraint firstItem="Tuu-Uu-rif" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="67" id="MEb-PI-OoB"/>
+                            <constraint firstItem="pxR-Bt-kXJ" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="OaV-YK-Z8H"/>
+                            <constraint firstItem="pxR-Bt-kXJ" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Oao-lJ-JIg"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Tuu-Uu-rif" secondAttribute="trailing" constant="68" id="SRn-lg-KuT"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Tuu-Uu-rif" secondAttribute="bottom" constant="304" id="UqQ-Zf-PMh"/>
+                            <constraint firstItem="tWZ-E2-faT" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="WQW-gE-3YI"/>
+                            <constraint firstItem="pxR-Bt-kXJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="cih-cP-MwM"/>
+                            <constraint firstItem="tWZ-E2-faT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="phe-bW-n7i"/>
+                            <constraint firstItem="Tuu-Uu-rif" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="88" id="zzf-Od-FdN"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -39,6 +52,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="LogoForLaunch" width="116" height="129"/>
+        <image name="Group 5" width="233" height="259"/>
+        <image name="Rectangle 22" width="414" height="631"/>
+        <image name="Rectangle 22 Copy" width="414" height="664"/>
     </resources>
 </document>
