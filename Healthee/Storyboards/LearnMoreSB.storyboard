@@ -1,71 +1,111 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="XYh-xj-Tik">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="VCg-g7-1eS">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Nunito-Regular.ttf">
+            <string>Nunito-Regular</string>
+        </array>
+        <array key="NunitoSans-Bold.ttf">
+            <string>NunitoSans-Bold</string>
+        </array>
+    </customFonts>
     <scenes>
-        <!--Learn More-->
-        <scene sceneID="jh9-DH-Tfl">
+        <!--Learn View Controller-->
+        <scene sceneID="ffE-vy-Yit">
             <objects>
-                <tableViewController storyboardIdentifier="LearnTableView" id="B8R-4U-qoM" customClass="LearnTableViewController" customModule="Healthee" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="HDK-rP-6L3">
+                <viewController id="VCg-g7-1eS" customClass="LearnViewController" customModule="Healthee" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="oxh-GN-4Xq">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ReportHeaderFront" translatesAutoresizingMaskIntoConstraints="NO" id="VvH-Gz-H3K">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="141"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="141" id="duY-uM-i9f"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ReportHeaderBack" translatesAutoresizingMaskIntoConstraints="NO" id="QM8-YY-sik">
+                                <rect key="frame" x="-0.5" y="0.0" width="375" height="134"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="134" id="Q5O-m7-c1y"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Learn" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="975-Nk-iJD">
+                                <rect key="frame" x="167" y="42" width="52" height="27.5"/>
+                                <fontDescription key="fontDescription" name="NunitoSans-Bold" family="Nunito Sans" pointSize="20"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Major Vs. Minor Violations" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DI9-Uf-C7g">
+                                <rect key="frame" x="16" y="165" width="193" height="22"/>
+                                <fontDescription key="fontDescription" name="NunitoSans-Bold" family="Nunito Sans" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Why SLC Has No Grading" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yr2-HY-XMu">
+                                <rect key="frame" x="16" y="423.5" width="191.5" height="22"/>
+                                <fontDescription key="fontDescription" name="NunitoSans-Bold" family="Nunito Sans" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="11" translatesAutoresizingMaskIntoConstraints="NO" id="Cve-xz-79N">
+                                <rect key="frame" x="16" y="203" width="343" height="196.5"/>
+                                <string key="text">Per the Health Department’s website,  major violations may pose an immediate risk to public heath while minor violations may lead to problems in an establishment over time if not corrected.
+
+Minor violations are given a point rating of 1 where a Major violation is given a point rating of 6.</string>
+                                <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="gTz-Wi-ZmS">
+                                <rect key="frame" x="16" y="462" width="343" height="159"/>
+                                <string key="text">The Salt Lake City Health Department does not use a grading system as it can be misleading.
+
+Ex: Restaurant 1 has a total of 20 very low-risk violations such as a cracked tile (worth one point). The restaurant then gets a B rating. Restauraunt 2 has a total of 3 high-risk violations such as chicken sitting out on the table, (total of 6 points). The restauraunt then gets an A rating.</string>
+                                <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="29X-Yz-dMX" style="IBUITableViewCellStyleDefault" id="Jnj-gX-WJ8">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Jnj-gX-WJ8" id="quW-R3-IWq">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="(SubjectToLearnAbout)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="29X-Yz-dMX">
-                                            <rect key="frame" x="16" y="0.0" width="343" height="43.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                    </subviews>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="B8R-4U-qoM" id="BLA-z4-0rA"/>
-                            <outlet property="delegate" destination="B8R-4U-qoM" id="YOV-Ga-2HD"/>
-                        </connections>
-                    </tableView>
-                    <tabBarItem key="tabBarItem" systemItem="more" id="0Lf-IN-41j"/>
-                    <navigationItem key="navigationItem" title="Learn More" id="Jil-Rf-dYA"/>
-                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="zMh-qx-Alf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                        <constraints>
+                            <constraint firstItem="DI9-Uf-C7g" firstAttribute="top" secondItem="VvH-Gz-H3K" secondAttribute="bottom" constant="24" id="1P3-ax-iOK"/>
+                            <constraint firstItem="Cve-xz-79N" firstAttribute="top" secondItem="DI9-Uf-C7g" secondAttribute="bottom" constant="16" id="1fp-nB-Htv"/>
+                            <constraint firstItem="gTz-Wi-ZmS" firstAttribute="top" secondItem="yr2-HY-XMu" secondAttribute="bottom" constant="16" id="3Mf-gb-x2h"/>
+                            <constraint firstItem="VvH-Gz-H3K" firstAttribute="centerX" secondItem="JxZ-yg-7hm" secondAttribute="centerX" id="3ap-HY-giw"/>
+                            <constraint firstItem="JxZ-yg-7hm" firstAttribute="leading" secondItem="975-Nk-iJD" secondAttribute="trailing" constant="-219" id="7BU-wF-4li"/>
+                            <constraint firstItem="QM8-YY-sik" firstAttribute="centerX" secondItem="JxZ-yg-7hm" secondAttribute="centerX" id="CiZ-Ci-8Vo"/>
+                            <constraint firstItem="DI9-Uf-C7g" firstAttribute="leading" secondItem="JxZ-yg-7hm" secondAttribute="leading" constant="16" id="Huc-FP-CFw"/>
+                            <constraint firstItem="QM8-YY-sik" firstAttribute="top" secondItem="oxh-GN-4Xq" secondAttribute="top" id="Kuq-cq-oBF"/>
+                            <constraint firstItem="Cve-xz-79N" firstAttribute="leading" secondItem="JxZ-yg-7hm" secondAttribute="leading" constant="16" id="X1S-Yw-bRF"/>
+                            <constraint firstItem="yr2-HY-XMu" firstAttribute="top" secondItem="Cve-xz-79N" secondAttribute="bottom" constant="24" id="XST-wd-3wH"/>
+                            <constraint firstItem="QM8-YY-sik" firstAttribute="width" secondItem="oxh-GN-4Xq" secondAttribute="width" id="ZFM-oF-pfj"/>
+                            <constraint firstItem="JxZ-yg-7hm" firstAttribute="trailing" secondItem="Cve-xz-79N" secondAttribute="trailing" constant="16" id="bcr-fL-0Aw"/>
+                            <constraint firstItem="gTz-Wi-ZmS" firstAttribute="leading" secondItem="JxZ-yg-7hm" secondAttribute="leading" constant="16" id="d89-Qz-yv6"/>
+                            <constraint firstItem="VvH-Gz-H3K" firstAttribute="width" secondItem="oxh-GN-4Xq" secondAttribute="width" id="eZy-Sa-WKV"/>
+                            <constraint firstItem="yr2-HY-XMu" firstAttribute="leading" secondItem="JxZ-yg-7hm" secondAttribute="leading" constant="16" id="el2-as-asn"/>
+                            <constraint firstItem="JxZ-yg-7hm" firstAttribute="trailing" secondItem="gTz-Wi-ZmS" secondAttribute="trailing" constant="16" id="llZ-Qb-4jo"/>
+                            <constraint firstItem="VvH-Gz-H3K" firstAttribute="top" secondItem="oxh-GN-4Xq" secondAttribute="top" id="xeu-Cr-tw2"/>
+                            <constraint firstItem="975-Nk-iJD" firstAttribute="top" secondItem="JxZ-yg-7hm" secondAttribute="top" constant="22" id="yuE-n2-cpA"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="JxZ-yg-7hm"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yHg-wV-MSd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="884" y="-72.413793103448285"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="f9y-np-6MQ">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="XYh-xj-Tik" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Aix-iN-WmZ">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="B8R-4U-qoM" kind="relationship" relationship="rootViewController" id="j8g-HE-hWP"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dNc-QT-U0d" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="106" y="-72"/>
+            <point key="canvasLocation" x="623.20000000000005" y="-11.244377811094454"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="ReportHeaderBack" width="414" height="134"/>
+        <image name="ReportHeaderFront" width="414" height="141"/>
+    </resources>
 </document>
