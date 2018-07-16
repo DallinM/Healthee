@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>579663910479-ljre9b6cliba79hqvo0qir570ltja4v8.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.579663910479-ljre9b6cliba79hqvo0qir570ltja4v8</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDClDrA4S_EJRmI8A57RMISkjgqNP6VgfM</string>
+	<key>GCM_SENDER_ID</key>
+	<string>579663910479</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.DallinMcConnell.Healthee</string>
+	<key>PROJECT_ID</key>
+	<string>healtheeapi-b4fc4</string>
+	<key>STORAGE_BUCKET</key>
+	<string>healtheeapi-b4fc4.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true></true>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false></false>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:579663910479:ios:0980922985856481</string>
+	<key>DATABASE_URL</key>
+	<string>https://healtheeapi-b4fc4.firebaseio.com</string>
+</dict>
+</plist>

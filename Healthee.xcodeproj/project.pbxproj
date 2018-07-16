@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		13905BB81E0BBA2EB4D40937 /* Pods_Healthee.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27298EDD767BDCCD2C98B8EF /* Pods_Healthee.framework */; };
 		30623CD620E185C100E5A2B8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30623CD520E185C100E5A2B8 /* AppDelegate.swift */; };
 		30623CDD20E185C300E5A2B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30623CDC20E185C300E5A2B8 /* Assets.xcassets */; };
 		30623CE020E185C300E5A2B8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30623CDE20E185C300E5A2B8 /* LaunchScreen.storyboard */; };
@@ -24,6 +25,7 @@
 		30EC254B20E4415D005A5305 /* ReportSB.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30EC254A20E4415D005A5305 /* ReportSB.storyboard */; };
 		30EC254D20E446D6005A5305 /* ReportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30EC254C20E446D6005A5305 /* ReportViewController.swift */; };
 		7117345120F3D38E003A1E24 /* HomeSB.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7117345020F3D38E003A1E24 /* HomeSB.storyboard */; };
+		7139AF3420FD3F4400AC8E13 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7139AF3320FD3F4400AC8E13 /* GoogleService-Info.plist */; };
 		719261F120F7FB6200470274 /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719261F020F7FB6200470274 /* Restaurant.swift */; };
 		719261F320F7FC5200470274 /* RestaurantListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719261F220F7FC5200470274 /* RestaurantListViewController.swift */; };
 		719261F520F7FCBE00470274 /* RestaurantListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719261F420F7FCBE00470274 /* RestaurantListTableViewCell.swift */; };
@@ -42,6 +44,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		27298EDD767BDCCD2C98B8EF /* Pods_Healthee.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Healthee.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D3722BEDF975E31E66AD72E /* Pods-Healthee.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Healthee.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Healthee/Pods-Healthee.debug.xcconfig"; sourceTree = "<group>"; };
 		30623CD220E185C100E5A2B8 /* Healthee.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Healthee.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		30623CD520E185C100E5A2B8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		30623CDC20E185C300E5A2B8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -62,13 +66,14 @@
 		30EC254A20E4415D005A5305 /* ReportSB.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ReportSB.storyboard; sourceTree = "<group>"; };
 		30EC254C20E446D6005A5305 /* ReportViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportViewController.swift; sourceTree = "<group>"; };
 		7117345020F3D38E003A1E24 /* HomeSB.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeSB.storyboard; sourceTree = "<group>"; };
-		719261F020F7FB6200470274 /* Restaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Restaurant.swift; path = Healthee/Storyboards/Restaurant.swift; sourceTree = SOURCE_ROOT; };
+		7139AF3320FD3F4400AC8E13 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		719261F020F7FB6200470274 /* Restaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Restaurant.swift; path = Healthee/Models/Restaurant.swift; sourceTree = SOURCE_ROOT; };
 		719261F220F7FC5200470274 /* RestaurantListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantListViewController.swift; sourceTree = "<group>"; };
 		719261F420F7FCBE00470274 /* RestaurantListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantListTableViewCell.swift; sourceTree = "<group>"; };
 		719261F620F7FD2A00470274 /* HomeMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeMapViewController.swift; sourceTree = "<group>"; };
-		719261F820F7FD7200470274 /* RestaurantController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RestaurantController.swift; path = Healthee/ViewControllers/RestaurantController.swift; sourceTree = SOURCE_ROOT; };
+		719261F820F7FD7200470274 /* RestaurantController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RestaurantController.swift; path = Healthee/ModelControllers/RestaurantController.swift; sourceTree = SOURCE_ROOT; };
 		719261FA20F7FDD400470274 /* UISearchBarExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UISearchBarExtension.swift; sourceTree = "<group>"; };
-		719261FC20F7FDFF00470274 /* MethodForConvertingHex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MethodForConvertingHex.swift; path = Healthee/Views/MethodForConvertingHex.swift; sourceTree = SOURCE_ROOT; };
+		719261FC20F7FDFF00470274 /* MethodForConvertingHex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MethodForConvertingHex.swift; path = Healthee/Helpers/MethodForConvertingHex.swift; sourceTree = SOURCE_ROOT; };
 		719261FE20F7FE9C00470274 /* TabBarDesignable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarDesignable.swift; sourceTree = "<group>"; };
 		7192620020F7FEBD00470274 /* RestaurantCellDesignable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantCellDesignable.swift; sourceTree = "<group>"; };
 		7192620220F7FEDE00470274 /* GripBarDesignable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GripBarDesignable.swift; sourceTree = "<group>"; };
@@ -77,6 +82,7 @@
 		748F213820E3FDB10023996B /* MapViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewViewController.swift; sourceTree = "<group>"; };
 		748F213A20E40C440023996B /* LearnMoreSB.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LearnMoreSB.storyboard; sourceTree = "<group>"; };
 		748F213E20E4465C0023996B /* SearchSB.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SearchSB.storyboard; sourceTree = "<group>"; };
+		CF0A569CEECD9F9ED9E18A17 /* Pods-Healthee.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Healthee.release.xcconfig"; path = "Pods/Target Support Files/Pods-Healthee/Pods-Healthee.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,17 +90,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13905BB81E0BBA2EB4D40937 /* Pods_Healthee.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		04376774F0C7864F0C62B329 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2D3722BEDF975E31E66AD72E /* Pods-Healthee.debug.xcconfig */,
+				CF0A569CEECD9F9ED9E18A17 /* Pods-Healthee.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		30623CC920E185C100E5A2B8 = {
 			isa = PBXGroup;
 			children = (
 				30623CD420E185C100E5A2B8 /* Healthee */,
 				30623CD320E185C100E5A2B8 /* Products */,
+				04376774F0C7864F0C62B329 /* Pods */,
+				EB85D548CC1065A01136CF37 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -109,12 +127,12 @@
 		30623CD420E185C100E5A2B8 /* Healthee */ = {
 			isa = PBXGroup;
 			children = (
-				30623CEC20E1865900E5A2B8 /* ModelControllers */,
-				30623CEB20E1865400E5A2B8 /* Models */,
+				7139AF3720FD3FB800AC8E13 /* ModelControllers */,
+				7139AF3620FD3FB300AC8E13 /* Models */,
 				30623CEA20E1864C00E5A2B8 /* ViewControllers */,
 				30623CE920E1863F00E5A2B8 /* Views */,
 				30623CE820E1862D00E5A2B8 /* Storyboards */,
-				30623CED20E1866900E5A2B8 /* Helpers */,
+				7139AF3520FD3FA900AC8E13 /* Helpers */,
 				30623CE720E1860A00E5A2B8 /* Resources */,
 			);
 			path = Healthee;
@@ -123,6 +141,7 @@
 		30623CE720E1860A00E5A2B8 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				7139AF3320FD3F4400AC8E13 /* GoogleService-Info.plist */,
 				30A197BA20F549D4003A4F1D /* Nunito-Regular.ttf */,
 				30A197BB20F6A05E003A4F1D /* NunitoSans-Regular.ttf */,
 				30A197C120F7C7B8003A4F1D /* NunitoSans-ExtraBold.ttf */,
@@ -179,7 +198,15 @@
 			path = ViewControllers;
 			sourceTree = "<group>";
 		};
-		30623CEB20E1865400E5A2B8 /* Models */ = {
+		7139AF3520FD3FA900AC8E13 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				719261FC20F7FDFF00470274 /* MethodForConvertingHex.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		7139AF3620FD3FB300AC8E13 /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				719261F020F7FB6200470274 /* Restaurant.swift */,
@@ -187,7 +214,7 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
-		30623CEC20E1865900E5A2B8 /* ModelControllers */ = {
+		7139AF3720FD3FB800AC8E13 /* ModelControllers */ = {
 			isa = PBXGroup;
 			children = (
 				719261F820F7FD7200470274 /* RestaurantController.swift */,
@@ -195,12 +222,12 @@
 			path = ModelControllers;
 			sourceTree = "<group>";
 		};
-		30623CED20E1866900E5A2B8 /* Helpers */ = {
+		EB85D548CC1065A01136CF37 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				719261FC20F7FDFF00470274 /* MethodForConvertingHex.swift */,
+				27298EDD767BDCCD2C98B8EF /* Pods_Healthee.framework */,
 			);
-			path = Helpers;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -210,9 +237,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 30623CE420E185C300E5A2B8 /* Build configuration list for PBXNativeTarget "Healthee" */;
 			buildPhases = (
+				823852FFE7BE520AD1108E1B /* [CP] Check Pods Manifest.lock */,
 				30623CCE20E185C100E5A2B8 /* Sources */,
 				30623CCF20E185C100E5A2B8 /* Frameworks */,
 				30623CD020E185C100E5A2B8 /* Resources */,
+				C4ABEEFF72C3C75AD09B8F69 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -261,6 +290,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7139AF3420FD3F4400AC8E13 /* GoogleService-Info.plist in Resources */,
 				7117345120F3D38E003A1E24 /* HomeSB.storyboard in Resources */,
 				30A197C420F7C8D8003A4F1D /* FavoritesSB.storyboard in Resources */,
 				30A1978B20EC0FCD003A4F1D /* RestaurantDescription.storyboard in Resources */,
@@ -277,6 +307,53 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		823852FFE7BE520AD1108E1B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Healthee-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C4ABEEFF72C3C75AD09B8F69 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Healthee/Pods-Healthee-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/Material/Material.framework",
+				"${BUILT_PRODUCTS_DIR}/Motion/Motion.framework",
+				"${BUILT_PRODUCTS_DIR}/Pulley/Pulley.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Material.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Motion.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Pulley.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Healthee/Pods-Healthee-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		30623CCE20E185C100E5A2B8 /* Sources */ = {
@@ -436,6 +513,7 @@
 		};
 		30623CE520E185C300E5A2B8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2D3722BEDF975E31E66AD72E /* Pods-Healthee.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -454,6 +532,7 @@
 		};
 		30623CE620E185C300E5A2B8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CF0A569CEECD9F9ED9E18A17 /* Pods-Healthee.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

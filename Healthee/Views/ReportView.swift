@@ -31,7 +31,7 @@ class ReportView: UIView {
         }
     }
     
-    @IBInspectable var shadowColor: UIColor? {
+    @IBInspectable override var shadowColor: UIColor? {
         get {
             if let color = layer.shadowColor {
                 return UIColor(cgColor: color)
