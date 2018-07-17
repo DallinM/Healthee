@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="yMl-ag-2wA">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="NunitoSans-Bold.ttf">
+            <string>NunitoSans-Bold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Major Violations View Controller-->
+        <scene sceneID="rfv-0v-zfQ">
+            <objects>
+                <viewController id="yMl-ag-2wA" customClass="MajorViolationsViewController" customModule="Healthee" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cZ6-s2-U9e">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ReportHeaderFront" translatesAutoresizingMaskIntoConstraints="NO" id="CA6-cE-VzX">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="141"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="141" id="WUt-I7-32E"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ReportHeaderBack" translatesAutoresizingMaskIntoConstraints="NO" id="CDT-w9-Gq5">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="134"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="134" id="pmz-AZ-Ui5"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(Restaurant Name)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1pS-TU-pTl">
+                                <rect key="frame" x="100" y="36" width="175" height="28"/>
+                                <fontDescription key="fontDescription" name="NunitoSans-Bold" family="Nunito Sans" pointSize="20"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Chevron-1" translatesAutoresizingMaskIntoConstraints="NO" id="I1c-Ff-TUW">
+                                <rect key="frame" x="34" y="42" width="12" height="20.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="12" id="3Fn-nf-qvO"/>
+                                    <constraint firstAttribute="height" constant="20.5" id="gJQ-P5-Ocn"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Major Violations" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6PR-9M-6Jt">
+                                <rect key="frame" x="34" y="82" width="150" height="28"/>
+                                <fontDescription key="fontDescription" name="NunitoSans-Bold" family="Nunito Sans" pointSize="20"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="GcE-rk-j5A">
+                                <rect key="frame" x="0.0" y="145" width="375" height="522"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="Ggy-Mq-RX5" detailTextLabel="7iN-cE-jjl" rowHeight="92" style="IBUITableViewCellStyleSubtitle" id="dK5-qt-M2n">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="92"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="dK5-qt-M2n" id="Zba-D8-kgW">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="91.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="This is where the violation name will go. Sometimes they are quite long, sometimes they are short." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Ggy-Mq-RX5">
+                                                    <rect key="frame" x="15" y="8" width="329" height="54"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="16"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="(Code: (code #))" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="7iN-cE-jjl">
+                                                    <rect key="frame" x="15" y="65" width="102" height="16"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="14"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="CA6-cE-VzX" firstAttribute="top" secondItem="cZ6-s2-U9e" secondAttribute="top" id="0D2-mh-XXS"/>
+                            <constraint firstItem="GcE-rk-j5A" firstAttribute="trailing" secondItem="VFX-tA-5Lv" secondAttribute="trailing" id="1Hg-zi-lph"/>
+                            <constraint firstItem="VFX-tA-5Lv" firstAttribute="trailing" secondItem="CDT-w9-Gq5" secondAttribute="trailing" id="4U8-fT-OOT"/>
+                            <constraint firstItem="6PR-9M-6Jt" firstAttribute="top" secondItem="1pS-TU-pTl" secondAttribute="bottom" constant="18" id="5Ay-PF-RkR"/>
+                            <constraint firstItem="GcE-rk-j5A" firstAttribute="top" secondItem="CA6-cE-VzX" secondAttribute="bottom" constant="4" id="6rf-df-iFD"/>
+                            <constraint firstItem="GcE-rk-j5A" firstAttribute="bottom" secondItem="VFX-tA-5Lv" secondAttribute="bottom" id="ADx-iK-axx"/>
+                            <constraint firstItem="I1c-Ff-TUW" firstAttribute="leading" secondItem="VFX-tA-5Lv" secondAttribute="leading" constant="34" id="HzI-vO-4sb"/>
+                            <constraint firstItem="1pS-TU-pTl" firstAttribute="top" secondItem="VFX-tA-5Lv" secondAttribute="top" constant="16" id="Ltj-AZ-fvn"/>
+                            <constraint firstItem="VFX-tA-5Lv" firstAttribute="trailing" secondItem="CA6-cE-VzX" secondAttribute="trailing" id="WbZ-ua-4VS"/>
+                            <constraint firstItem="GcE-rk-j5A" firstAttribute="leading" secondItem="VFX-tA-5Lv" secondAttribute="leading" id="aH1-eV-u08"/>
+                            <constraint firstItem="CDT-w9-Gq5" firstAttribute="leading" secondItem="VFX-tA-5Lv" secondAttribute="leading" id="bBU-7A-ogd"/>
+                            <constraint firstItem="I1c-Ff-TUW" firstAttribute="top" secondItem="VFX-tA-5Lv" secondAttribute="top" constant="22" id="bZ5-zp-MCP"/>
+                            <constraint firstItem="6PR-9M-6Jt" firstAttribute="leading" secondItem="VFX-tA-5Lv" secondAttribute="leading" constant="34" id="cai-b4-fUj"/>
+                            <constraint firstItem="1pS-TU-pTl" firstAttribute="centerX" secondItem="VFX-tA-5Lv" secondAttribute="centerX" id="gLv-bz-xcQ"/>
+                            <constraint firstItem="CA6-cE-VzX" firstAttribute="leading" secondItem="VFX-tA-5Lv" secondAttribute="leading" id="qZu-Me-2jY"/>
+                            <constraint firstItem="CDT-w9-Gq5" firstAttribute="top" secondItem="cZ6-s2-U9e" secondAttribute="top" id="tk4-8f-i5b"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="VFX-tA-5Lv"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7HH-Ei-50o" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-82.400000000000006" y="148.87556221889056"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Chevron-1" width="12" height="21"/>
+        <image name="ReportHeaderBack" width="414" height="134"/>
+        <image name="ReportHeaderFront" width="414" height="141"/>
+    </resources>
+</document>
