@@ -12,6 +12,15 @@ import Pulley
 
 class RestaurantListViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
+    
+    @IBAction func unwindToRestaurantListController(segue:UIStoryboardSegue) {
+        
+        self.reloadTableView()
+    }
+    
+    
+    
+    
     static let sharedController = RestaurantListViewController()
     
     @IBOutlet weak var restaurantListTableView: UITableView!
@@ -171,3 +180,15 @@ extension RestaurantListViewController: PulleyDrawerViewControllerDelegate {
         }
     }
 }
+
+//    /// This function is called when the current drawer display mode changes. Make UI customizations here.
+//    func drawerDisplayModeDidChange(drawer: PulleyViewController) {
+//
+//        print("Drawer: \(drawer.currentDisplayMode)")
+//        topGripperConstraint.isActive = drawer.currentDisplayMode == .bottomDrawer
+//    }
+//}
+
+
+
+

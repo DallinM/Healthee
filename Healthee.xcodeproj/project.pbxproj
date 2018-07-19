@@ -38,6 +38,12 @@
 		7192620320F7FEDE00470274 /* GripBarDesignable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7192620220F7FEDE00470274 /* GripBarDesignable.swift */; };
 		7192620520F7FF0B00470274 /* PullBarDesignable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7192620420F7FF0B00470274 /* PullBarDesignable.swift */; };
 		7192620720F7FF2900470274 /* SearchBarDesignable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7192620620F7FF2900470274 /* SearchBarDesignable.swift */; };
+		71FC95CB21013618009D52FF /* ViolationsOverviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71FC95CA21013618009D52FF /* ViolationsOverviewViewController.swift */; };
+		71FC95CD21013642009D52FF /* ReoccurringViolationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71FC95CC21013642009D52FF /* ReoccurringViolationsViewController.swift */; };
+		71FC95CF2101365F009D52FF /* ThreeInspectionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71FC95CE2101365F009D52FF /* ThreeInspectionsViewController.swift */; };
+		71FC95D1210136A2009D52FF /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71FC95D0210136A2009D52FF /* MainViewController.swift */; };
+		71FC95D3210136B2009D52FF /* MainPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71FC95D2210136B2009D52FF /* MainPageViewController.swift */; };
+		71FC95D5210136C4009D52FF /* SegueToOverviewFrmCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71FC95D4210136C4009D52FF /* SegueToOverviewFrmCell.swift */; };
 		748F213920E3FDB10023996B /* MapViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748F213820E3FDB10023996B /* MapViewViewController.swift */; };
 		748F213B20E40C440023996B /* LearnMoreSB.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 748F213A20E40C440023996B /* LearnMoreSB.storyboard */; };
 		748F213F20E4465C0023996B /* SearchSB.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 748F213E20E4465C0023996B /* SearchSB.storyboard */; };
@@ -79,6 +85,12 @@
 		7192620220F7FEDE00470274 /* GripBarDesignable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GripBarDesignable.swift; sourceTree = "<group>"; };
 		7192620420F7FF0B00470274 /* PullBarDesignable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PullBarDesignable.swift; sourceTree = "<group>"; };
 		7192620620F7FF2900470274 /* SearchBarDesignable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarDesignable.swift; sourceTree = "<group>"; };
+		71FC95CA21013618009D52FF /* ViolationsOverviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViolationsOverviewViewController.swift; sourceTree = "<group>"; };
+		71FC95CC21013642009D52FF /* ReoccurringViolationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReoccurringViolationsViewController.swift; sourceTree = "<group>"; };
+		71FC95CE2101365F009D52FF /* ThreeInspectionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeInspectionsViewController.swift; sourceTree = "<group>"; };
+		71FC95D0210136A2009D52FF /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		71FC95D2210136B2009D52FF /* MainPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageViewController.swift; sourceTree = "<group>"; };
+		71FC95D4210136C4009D52FF /* SegueToOverviewFrmCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegueToOverviewFrmCell.swift; sourceTree = "<group>"; };
 		748F213820E3FDB10023996B /* MapViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewViewController.swift; sourceTree = "<group>"; };
 		748F213A20E40C440023996B /* LearnMoreSB.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LearnMoreSB.storyboard; sourceTree = "<group>"; };
 		748F213E20E4465C0023996B /* SearchSB.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SearchSB.storyboard; sourceTree = "<group>"; };
@@ -194,6 +206,12 @@
 				30EC254C20E446D6005A5305 /* ReportViewController.swift */,
 				719261F220F7FC5200470274 /* RestaurantListViewController.swift */,
 				719261F620F7FD2A00470274 /* HomeMapViewController.swift */,
+				71FC95CA21013618009D52FF /* ViolationsOverviewViewController.swift */,
+				71FC95CC21013642009D52FF /* ReoccurringViolationsViewController.swift */,
+				71FC95CE2101365F009D52FF /* ThreeInspectionsViewController.swift */,
+				71FC95D0210136A2009D52FF /* MainViewController.swift */,
+				71FC95D2210136B2009D52FF /* MainPageViewController.swift */,
+				71FC95D4210136C4009D52FF /* SegueToOverviewFrmCell.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -334,19 +352,23 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Healthee/Pods-Healthee-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Canvas/Canvas.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/Material/Material.framework",
 				"${BUILT_PRODUCTS_DIR}/Motion/Motion.framework",
 				"${BUILT_PRODUCTS_DIR}/Pulley/Pulley.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Canvas.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Material.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Motion.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Pulley.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -375,11 +397,17 @@
 				719261F520F7FCBE00470274 /* RestaurantListTableViewCell.swift in Sources */,
 				719261F920F7FD7200470274 /* RestaurantController.swift in Sources */,
 				30A197B720F400D0003A4F1D /* ReportView.swift in Sources */,
+				71FC95D1210136A2009D52FF /* MainViewController.swift in Sources */,
 				719261FF20F7FE9C00470274 /* TabBarDesignable.swift in Sources */,
+				71FC95CB21013618009D52FF /* ViolationsOverviewViewController.swift in Sources */,
 				719261F320F7FC5200470274 /* RestaurantListViewController.swift in Sources */,
 				30623CD620E185C100E5A2B8 /* AppDelegate.swift in Sources */,
+				71FC95D3210136B2009D52FF /* MainPageViewController.swift in Sources */,
 				719261F120F7FB6200470274 /* Restaurant.swift in Sources */,
+				71FC95CD21013642009D52FF /* ReoccurringViolationsViewController.swift in Sources */,
+				71FC95CF2101365F009D52FF /* ThreeInspectionsViewController.swift in Sources */,
 				719261FB20F7FDD400470274 /* UISearchBarExtension.swift in Sources */,
+				71FC95D5210136C4009D52FF /* SegueToOverviewFrmCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

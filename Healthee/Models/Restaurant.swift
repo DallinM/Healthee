@@ -20,7 +20,7 @@ struct Restaurant: Codable {
     var name: String
     var major: Int
     var minor: Int
-    
+    var violationTitle: String
     
     enum CodingKeys: String, CodingKey {
         
@@ -30,7 +30,7 @@ struct Restaurant: Codable {
         case name =  "name"
         case major = "major"
         case minor = "minor"
-        
+        case violationTitle = "violationTitle"
     }
     
 }
