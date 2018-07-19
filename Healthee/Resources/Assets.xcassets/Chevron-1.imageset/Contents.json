@@ -7,12 +7,18 @@
     },
     {
       "idiom" : "universal",
+<<<<<<< HEAD
       "filename" : "Chevron@2x.png",
+=======
+>>>>>>> 66a3d78d8448d28a8199f0d33cefa605082fef1d
       "scale" : "2x"
     },
     {
       "idiom" : "universal",
+<<<<<<< HEAD
       "filename" : "Chevron@3x.png",
+=======
+>>>>>>> 66a3d78d8448d28a8199f0d33cefa605082fef1d
       "scale" : "3x"
     }
   ],

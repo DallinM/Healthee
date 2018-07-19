@@ -20,6 +20,11 @@
 		30A197C220F7C7B8003A4F1D /* NunitoSans-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 30A197C120F7C7B8003A4F1D /* NunitoSans-ExtraBold.ttf */; };
 		30A197C420F7C8D8003A4F1D /* FavoritesSB.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30A197C320F7C8D7003A4F1D /* FavoritesSB.storyboard */; };
 		30A197C620F7D533003A4F1D /* FavoritesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A197C520F7D533003A4F1D /* FavoritesTableViewController.swift */; };
+		30A197CE20FDC3BA003A4F1D /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A197CD20FDC3BA003A4F1D /* FavoritesViewController.swift */; };
+		30A197D020FE7CFF003A4F1D /* MajorViolations.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30A197CF20FE7CFF003A4F1D /* MajorViolations.storyboard */; };
+		30A197D220FE80EF003A4F1D /* MajorViolationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A197D120FE80EF003A4F1D /* MajorViolationsViewController.swift */; };
+		30A197D420FE81C4003A4F1D /* MinorViolationsSB.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30A197D320FE81C4003A4F1D /* MinorViolationsSB.storyboard */; };
+		30A197D620FE822D003A4F1D /* MinorViolationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A197D520FE822D003A4F1D /* MinorViolationsViewController.swift */; };
 		30D50A3F20E6ADF80040927C /* RestaurantOverviewSB.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30D50A3E20E6ADF80040927C /* RestaurantOverviewSB.storyboard */; };
 		30D50A4120E6AF470040927C /* RestaurantOverviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D50A4020E6AF470040927C /* RestaurantOverviewViewController.swift */; };
 		30EC254B20E4415D005A5305 /* ReportSB.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30EC254A20E4415D005A5305 /* ReportSB.storyboard */; };
@@ -67,6 +72,11 @@
 		30A197C120F7C7B8003A4F1D /* NunitoSans-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NunitoSans-ExtraBold.ttf"; sourceTree = "<group>"; };
 		30A197C320F7C8D7003A4F1D /* FavoritesSB.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = FavoritesSB.storyboard; sourceTree = "<group>"; };
 		30A197C520F7D533003A4F1D /* FavoritesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesTableViewController.swift; sourceTree = "<group>"; };
+		30A197CD20FDC3BA003A4F1D /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
+		30A197CF20FE7CFF003A4F1D /* MajorViolations.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MajorViolations.storyboard; sourceTree = "<group>"; };
+		30A197D120FE80EF003A4F1D /* MajorViolationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MajorViolationsViewController.swift; sourceTree = "<group>"; };
+		30A197D320FE81C4003A4F1D /* MinorViolationsSB.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MinorViolationsSB.storyboard; sourceTree = "<group>"; };
+		30A197D520FE822D003A4F1D /* MinorViolationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinorViolationsViewController.swift; sourceTree = "<group>"; };
 		30D50A3E20E6ADF80040927C /* RestaurantOverviewSB.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RestaurantOverviewSB.storyboard; sourceTree = "<group>"; };
 		30D50A4020E6AF470040927C /* RestaurantOverviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantOverviewViewController.swift; sourceTree = "<group>"; };
 		30EC254A20E4415D005A5305 /* ReportSB.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ReportSB.storyboard; sourceTree = "<group>"; };
@@ -172,6 +182,8 @@
 				30623CDE20E185C300E5A2B8 /* LaunchScreen.storyboard */,
 				748F213A20E40C440023996B /* LearnMoreSB.storyboard */,
 				30A197C320F7C8D7003A4F1D /* FavoritesSB.storyboard */,
+				30A197CF20FE7CFF003A4F1D /* MajorViolations.storyboard */,
+				30A197D320FE81C4003A4F1D /* MinorViolationsSB.storyboard */,
 				748F213E20E4465C0023996B /* SearchSB.storyboard */,
 				30D50A3E20E6ADF80040927C /* RestaurantOverviewSB.storyboard */,
 				30A1978A20EC0FCD003A4F1D /* RestaurantDescription.storyboard */,
@@ -206,12 +218,17 @@
 				30EC254C20E446D6005A5305 /* ReportViewController.swift */,
 				719261F220F7FC5200470274 /* RestaurantListViewController.swift */,
 				719261F620F7FD2A00470274 /* HomeMapViewController.swift */,
+
 				71FC95CA21013618009D52FF /* ViolationsOverviewViewController.swift */,
 				71FC95CC21013642009D52FF /* ReoccurringViolationsViewController.swift */,
 				71FC95CE2101365F009D52FF /* ThreeInspectionsViewController.swift */,
 				71FC95D0210136A2009D52FF /* MainViewController.swift */,
 				71FC95D2210136B2009D52FF /* MainPageViewController.swift */,
 				71FC95D4210136C4009D52FF /* SegueToOverviewFrmCell.swift */,
+
+				30A197CD20FDC3BA003A4F1D /* FavoritesViewController.swift */,
+				30A197D120FE80EF003A4F1D /* MajorViolationsViewController.swift */,
+				30A197D520FE822D003A4F1D /* MinorViolationsViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -310,8 +327,10 @@
 			files = (
 				7139AF3420FD3F4400AC8E13 /* GoogleService-Info.plist in Resources */,
 				7117345120F3D38E003A1E24 /* HomeSB.storyboard in Resources */,
+				30A197D420FE81C4003A4F1D /* MinorViolationsSB.storyboard in Resources */,
 				30A197C420F7C8D8003A4F1D /* FavoritesSB.storyboard in Resources */,
 				30A1978B20EC0FCD003A4F1D /* RestaurantDescription.storyboard in Resources */,
+				30A197D020FE7CFF003A4F1D /* MajorViolations.storyboard in Resources */,
 				30623CE020E185C300E5A2B8 /* LaunchScreen.storyboard in Resources */,
 				30D50A3F20E6ADF80040927C /* RestaurantOverviewSB.storyboard in Resources */,
 				748F213F20E4465C0023996B /* SearchSB.storyboard in Resources */,
@@ -382,6 +401,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				30A197D220FE80EF003A4F1D /* MajorViolationsViewController.swift in Sources */,
+				30A197D620FE822D003A4F1D /* MinorViolationsViewController.swift in Sources */,
 				719261F720F7FD2A00470274 /* HomeMapViewController.swift in Sources */,
 				7192620320F7FEDE00470274 /* GripBarDesignable.swift in Sources */,
 				30A197B920F546E4003A4F1D /* LearnViewController.swift in Sources */,
@@ -399,7 +420,9 @@
 				30A197B720F400D0003A4F1D /* ReportView.swift in Sources */,
 				71FC95D1210136A2009D52FF /* MainViewController.swift in Sources */,
 				719261FF20F7FE9C00470274 /* TabBarDesignable.swift in Sources */,
+
 				71FC95CB21013618009D52FF /* ViolationsOverviewViewController.swift in Sources */,
+				30A197CE20FDC3BA003A4F1D /* FavoritesViewController.swift in Sources */,
 				719261F320F7FC5200470274 /* RestaurantListViewController.swift in Sources */,
 				30623CD620E185C100E5A2B8 /* AppDelegate.swift in Sources */,
 				71FC95D3210136B2009D52FF /* MainPageViewController.swift in Sources */,
