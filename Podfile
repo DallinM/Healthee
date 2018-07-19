@@ -1,9 +1,6 @@
-<<<<<<< HEAD
 
-# platform :ios, '9.0'
-=======
 platform :ios, '9.0'
->>>>>>> 66a3d78d8448d28a8199f0d33cefa605082fef1d
+
 
 target 'Healthee' do
 
