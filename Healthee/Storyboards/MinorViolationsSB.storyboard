@@ -15,10 +15,42 @@
         </array>
     </customFonts>
     <scenes>
+        <!--SearchSB-->
+        <scene sceneID="rHx-qS-4q1">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="SearchSB" storyboardName="SearchSB" id="N49-2Z-ii0" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="r1L-kb-gB3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-310" y="581"/>
+        </scene>
+        <!--FavoritesSB-->
+        <scene sceneID="rUa-5k-7GW">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="FavoritesSB" storyboardName="FavoritesSB" id="a7k-KF-KMs" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hyZ-Tk-IoA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-187" y="688"/>
+        </scene>
+        <!--LearnMoreSB-->
+        <scene sceneID="T6A-B2-dzY">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="LearnSB" storyboardName="LearnMoreSB" id="yLK-gE-13S" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IiG-ur-XY1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="38" y="688"/>
+        </scene>
+        <!--ReportSB-->
+        <scene sceneID="jQS-mo-woO">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="ReportSB" storyboardName="ReportSB" id="GzW-mb-Zkj" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kR7-lw-3uY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="146" y="581"/>
+        </scene>
         <!--Minor Violations View Controller-->
         <scene sceneID="rfv-0v-zfQ">
             <objects>
-                <viewController id="yMl-ag-2wA" customClass="MinorViolationsViewController" customModule="Healthee" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MinorSB" id="yMl-ag-2wA" customClass="MinorViolationsViewController" customModule="Healthee" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cZ6-s2-U9e">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -36,7 +68,7 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(Restaurant Name)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1pS-TU-pTl">
-                                <rect key="frame" x="100" y="36" width="175" height="28"/>
+                                <rect key="frame" x="100" y="36" width="175" height="27.5"/>
                                 <fontDescription key="fontDescription" name="NunitoSans-Bold" family="Nunito Sans" pointSize="20"/>
                                 <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -49,13 +81,13 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Minor Violations" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6PR-9M-6Jt">
-                                <rect key="frame" x="34" y="82" width="151" height="28"/>
+                                <rect key="frame" x="34" y="81.5" width="150.5" height="27.5"/>
                                 <fontDescription key="fontDescription" name="NunitoSans-Bold" family="Nunito Sans" pointSize="20"/>
                                 <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="GcE-rk-j5A">
-                                <rect key="frame" x="0.0" y="145" width="375" height="522"/>
+                                <rect key="frame" x="0.0" y="145" width="375" height="473"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="Ggy-Mq-RX5" detailTextLabel="7iN-cE-jjl" rowHeight="92" style="IBUITableViewCellStyleSubtitle" id="dK5-qt-M2n">
@@ -84,6 +116,54 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MU6-oI-sFh">
+                                <rect key="frame" x="0.0" y="618" width="375" height="49"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="uxK-m3-v7m">
+                                        <rect key="frame" x="0.0" y="2" width="375" height="47"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9lL-52-MMh">
+                                                <rect key="frame" x="0.0" y="0.0" width="94" height="47"/>
+                                                <state key="normal" image="home"/>
+                                                <connections>
+                                                    <segue destination="N49-2Z-ii0" kind="show" animates="NO" id="8BN-tb-ohd"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zon-fk-qHf">
+                                                <rect key="frame" x="94" y="0.0" width="93.5" height="47"/>
+                                                <state key="normal" image="favorites"/>
+                                                <connections>
+                                                    <segue destination="a7k-KF-KMs" kind="show" animates="NO" id="e9n-Yu-Hy0"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EdB-J7-wXe">
+                                                <rect key="frame" x="187.5" y="0.0" width="94" height="47"/>
+                                                <state key="normal" image="learn"/>
+                                                <connections>
+                                                    <segue destination="yLK-gE-13S" kind="show" animates="NO" id="yzf-Zi-krk"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a2G-YT-BXx">
+                                                <rect key="frame" x="281.5" y="0.0" width="93.5" height="47"/>
+                                                <state key="normal" image="report"/>
+                                                <connections>
+                                                    <segue destination="GzW-mb-Zkj" kind="show" animates="NO" id="5K8-Lf-K8d"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="47" id="baF-LU-Ljr"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.2784313725" green="0.2784313725" blue="0.2784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="uxK-m3-v7m" firstAttribute="leading" secondItem="MU6-oI-sFh" secondAttribute="leading" id="GGY-uE-Kva"/>
+                                    <constraint firstAttribute="trailing" secondItem="uxK-m3-v7m" secondAttribute="trailing" id="NeK-cD-Cw5"/>
+                                    <constraint firstAttribute="height" constant="49" id="ZxJ-Qu-OJu"/>
+                                    <constraint firstAttribute="bottom" secondItem="uxK-m3-v7m" secondAttribute="bottom" id="tnC-KN-iuu"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -92,15 +172,18 @@
                             <constraint firstItem="VFX-tA-5Lv" firstAttribute="trailing" secondItem="CDT-w9-Gq5" secondAttribute="trailing" id="4U8-fT-OOT"/>
                             <constraint firstItem="6PR-9M-6Jt" firstAttribute="top" secondItem="1pS-TU-pTl" secondAttribute="bottom" constant="18" id="5Ay-PF-RkR"/>
                             <constraint firstItem="GcE-rk-j5A" firstAttribute="top" secondItem="CA6-cE-VzX" secondAttribute="bottom" constant="4" id="6rf-df-iFD"/>
-                            <constraint firstItem="GcE-rk-j5A" firstAttribute="bottom" secondItem="VFX-tA-5Lv" secondAttribute="bottom" id="ADx-iK-axx"/>
+                            <constraint firstItem="MU6-oI-sFh" firstAttribute="top" secondItem="GcE-rk-j5A" secondAttribute="bottom" id="FTe-nE-7AP"/>
                             <constraint firstItem="I1c-Ff-TUW" firstAttribute="leading" secondItem="VFX-tA-5Lv" secondAttribute="leading" constant="34" id="HzI-vO-4sb"/>
                             <constraint firstItem="1pS-TU-pTl" firstAttribute="top" secondItem="VFX-tA-5Lv" secondAttribute="top" constant="16" id="Ltj-AZ-fvn"/>
+                            <constraint firstItem="MU6-oI-sFh" firstAttribute="trailing" secondItem="VFX-tA-5Lv" secondAttribute="trailing" id="OiV-in-iNB"/>
+                            <constraint firstItem="MU6-oI-sFh" firstAttribute="leading" secondItem="VFX-tA-5Lv" secondAttribute="leading" id="TE1-ao-IyK"/>
                             <constraint firstItem="VFX-tA-5Lv" firstAttribute="trailing" secondItem="CA6-cE-VzX" secondAttribute="trailing" id="WbZ-ua-4VS"/>
                             <constraint firstItem="GcE-rk-j5A" firstAttribute="leading" secondItem="VFX-tA-5Lv" secondAttribute="leading" id="aH1-eV-u08"/>
                             <constraint firstItem="CDT-w9-Gq5" firstAttribute="leading" secondItem="VFX-tA-5Lv" secondAttribute="leading" id="bBU-7A-ogd"/>
                             <constraint firstItem="I1c-Ff-TUW" firstAttribute="top" secondItem="VFX-tA-5Lv" secondAttribute="top" constant="22" id="bZ5-zp-MCP"/>
                             <constraint firstItem="6PR-9M-6Jt" firstAttribute="leading" secondItem="VFX-tA-5Lv" secondAttribute="leading" constant="34" id="cai-b4-fUj"/>
                             <constraint firstItem="1pS-TU-pTl" firstAttribute="centerX" secondItem="VFX-tA-5Lv" secondAttribute="centerX" id="gLv-bz-xcQ"/>
+                            <constraint firstItem="MU6-oI-sFh" firstAttribute="bottom" secondItem="VFX-tA-5Lv" secondAttribute="bottom" id="pJf-nf-AZR"/>
                             <constraint firstItem="CA6-cE-VzX" firstAttribute="leading" secondItem="VFX-tA-5Lv" secondAttribute="leading" id="qZu-Me-2jY"/>
                             <constraint firstItem="CDT-w9-Gq5" firstAttribute="top" secondItem="cZ6-s2-U9e" secondAttribute="top" id="tk4-8f-i5b"/>
                         </constraints>
@@ -116,5 +199,9 @@
         <image name="Chevron-1" width="12" height="21"/>
         <image name="ReportHeaderBack" width="414" height="134"/>
         <image name="ReportHeaderFront" width="414" height="141"/>
+        <image name="favorites" width="54" height="35"/>
+        <image name="home" width="33" height="36"/>
+        <image name="learn" width="32" height="36"/>
+        <image name="report" width="40" height="37"/>
     </resources>
 </document>

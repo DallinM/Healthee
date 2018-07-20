@@ -21,7 +21,7 @@
         <!--Learn View Controller-->
         <scene sceneID="ffE-vy-Yit">
             <objects>
-                <viewController id="VCg-g7-1eS" customClass="LearnViewController" customModule="Healthee" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LearnSB" id="VCg-g7-1eS" customClass="LearnViewController" customModule="Healthee" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="oxh-GN-4Xq">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -51,26 +51,71 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Why SLC Has No Grading" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yr2-HY-XMu">
-                                <rect key="frame" x="16" y="423.5" width="191.5" height="22"/>
+                                <rect key="frame" x="16" y="370.5" width="191.5" height="22"/>
                                 <fontDescription key="fontDescription" name="NunitoSans-Bold" family="Nunito Sans" pointSize="16"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="11" translatesAutoresizingMaskIntoConstraints="NO" id="Cve-xz-79N">
-                                <rect key="frame" x="16" y="203" width="343" height="196.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="Cve-xz-79N">
+                                <rect key="frame" x="16" y="203" width="343" height="143.5"/>
                                 <string key="text">Per the Health Department’s website,  major violations may pose an immediate risk to public heath while minor violations may lead to problems in an establishment over time if not corrected.
 
 Minor violations are given a point rating of 1 where a Major violation is given a point rating of 6.</string>
-                                <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="16"/>
+                                <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="15"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="gTz-Wi-ZmS">
-                                <rect key="frame" x="16" y="462" width="343" height="159"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BWQ-N6-OLD">
+                                <rect key="frame" x="0.0" y="618" width="375" height="49"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="J0f-oU-sus">
+                                        <rect key="frame" x="0.0" y="2" width="375" height="47"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YaT-mr-3RR">
+                                                <rect key="frame" x="0.0" y="0.0" width="94" height="47"/>
+                                                <state key="normal" image="home"/>
+                                                <connections>
+                                                    <segue destination="w1O-De-meT" kind="show" animates="NO" id="g8H-f6-dNW"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DAC-yI-AE4">
+                                                <rect key="frame" x="94" y="0.0" width="93.5" height="47"/>
+                                                <state key="normal" image="favorites"/>
+                                                <connections>
+                                                    <segue destination="dpo-UC-edZ" kind="show" animates="NO" id="aZ2-iF-XAd"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e84-bq-cAd">
+                                                <rect key="frame" x="187.5" y="0.0" width="94" height="47"/>
+                                                <state key="normal" image="learn"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qjO-pM-Ilx">
+                                                <rect key="frame" x="281.5" y="0.0" width="93.5" height="47"/>
+                                                <state key="normal" image="report"/>
+                                                <connections>
+                                                    <segue destination="38d-7m-j3q" kind="show" animates="NO" id="KSq-yb-GnB"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="47" id="1Lm-T1-gas"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.2784313725" green="0.2784313725" blue="0.2784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="J0f-oU-sus" secondAttribute="trailing" id="BZ2-Tk-sU7"/>
+                                    <constraint firstAttribute="bottom" secondItem="J0f-oU-sus" secondAttribute="bottom" id="fEP-l7-lsq"/>
+                                    <constraint firstItem="J0f-oU-sus" firstAttribute="leading" secondItem="BWQ-N6-OLD" secondAttribute="leading" id="hB7-LB-XkG"/>
+                                    <constraint firstAttribute="height" constant="49" id="pm1-1C-peC"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="gTz-Wi-ZmS">
+                                <rect key="frame" x="16" y="408.5" width="343" height="184.5"/>
                                 <string key="text">The Salt Lake City Health Department does not use a grading system as it can be misleading.
 
 Ex: Restaurant 1 has a total of 20 very low-risk violations such as a cracked tile (worth one point). The restaurant then gets a B rating. Restauraunt 2 has a total of 3 high-risk violations such as chicken sitting out on the table, (total of 6 points). The restauraunt then gets an A rating.</string>
-                                <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="16"/>
+                                <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="15"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -84,6 +129,7 @@ Ex: Restaurant 1 has a total of 20 very low-risk violations such as a cracked ti
                             <constraint firstItem="JxZ-yg-7hm" firstAttribute="leading" secondItem="975-Nk-iJD" secondAttribute="trailing" constant="-219" id="7BU-wF-4li"/>
                             <constraint firstItem="QM8-YY-sik" firstAttribute="centerX" secondItem="JxZ-yg-7hm" secondAttribute="centerX" id="CiZ-Ci-8Vo"/>
                             <constraint firstItem="DI9-Uf-C7g" firstAttribute="leading" secondItem="JxZ-yg-7hm" secondAttribute="leading" constant="16" id="Huc-FP-CFw"/>
+                            <constraint firstItem="BWQ-N6-OLD" firstAttribute="leading" secondItem="oxh-GN-4Xq" secondAttribute="leading" id="Ijh-iK-38a"/>
                             <constraint firstItem="QM8-YY-sik" firstAttribute="top" secondItem="oxh-GN-4Xq" secondAttribute="top" id="Kuq-cq-oBF"/>
                             <constraint firstItem="Cve-xz-79N" firstAttribute="leading" secondItem="JxZ-yg-7hm" secondAttribute="leading" constant="16" id="X1S-Yw-bRF"/>
                             <constraint firstItem="yr2-HY-XMu" firstAttribute="top" secondItem="Cve-xz-79N" secondAttribute="bottom" constant="24" id="XST-wd-3wH"/>
@@ -93,6 +139,8 @@ Ex: Restaurant 1 has a total of 20 very low-risk violations such as a cracked ti
                             <constraint firstItem="VvH-Gz-H3K" firstAttribute="width" secondItem="oxh-GN-4Xq" secondAttribute="width" id="eZy-Sa-WKV"/>
                             <constraint firstItem="yr2-HY-XMu" firstAttribute="leading" secondItem="JxZ-yg-7hm" secondAttribute="leading" constant="16" id="el2-as-asn"/>
                             <constraint firstItem="JxZ-yg-7hm" firstAttribute="trailing" secondItem="gTz-Wi-ZmS" secondAttribute="trailing" constant="16" id="llZ-Qb-4jo"/>
+                            <constraint firstItem="JxZ-yg-7hm" firstAttribute="trailing" secondItem="BWQ-N6-OLD" secondAttribute="trailing" id="nQ1-J0-1pF"/>
+                            <constraint firstItem="BWQ-N6-OLD" firstAttribute="bottom" secondItem="JxZ-yg-7hm" secondAttribute="bottom" id="oFZ-F3-1R6"/>
                             <constraint firstItem="VvH-Gz-H3K" firstAttribute="top" secondItem="oxh-GN-4Xq" secondAttribute="top" id="xeu-Cr-tw2"/>
                             <constraint firstItem="975-Nk-iJD" firstAttribute="top" secondItem="JxZ-yg-7hm" secondAttribute="top" constant="22" id="yuE-n2-cpA"/>
                         </constraints>
@@ -103,9 +151,37 @@ Ex: Restaurant 1 has a total of 20 very low-risk violations such as a cracked ti
             </objects>
             <point key="canvasLocation" x="623.20000000000005" y="-11.244377811094454"/>
         </scene>
+        <!--SearchSB-->
+        <scene sceneID="lzk-q2-RGI">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="SearchSB" storyboardName="SearchSB" id="w1O-De-meT" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8sb-Bm-feL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="396" y="432"/>
+        </scene>
+        <!--FavoritesSB-->
+        <scene sceneID="JFG-yM-vJm">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="FavoritesSB" storyboardName="FavoritesSB" id="dpo-UC-edZ" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="v3J-dx-l6j" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="622" y="432"/>
+        </scene>
+        <!--ReportSB-->
+        <scene sceneID="UU6-Td-XkG">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="ReportSB" storyboardName="ReportSB" id="38d-7m-j3q" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XET-rv-fy0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="851" y="432"/>
+        </scene>
     </scenes>
     <resources>
         <image name="ReportHeaderBack" width="414" height="134"/>
         <image name="ReportHeaderFront" width="414" height="141"/>
+        <image name="favorites" width="54" height="35"/>
+        <image name="home" width="33" height="36"/>
+        <image name="learn" width="32" height="36"/>
+        <image name="report" width="40" height="37"/>
     </resources>
 </document>
