@@ -90,7 +90,7 @@
                                 <rect key="frame" x="0.0" y="145" width="375" height="473"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="Ggy-Mq-RX5" detailTextLabel="7iN-cE-jjl" rowHeight="92" style="IBUITableViewCellStyleSubtitle" id="dK5-qt-M2n">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="MinorViolationCell" textLabel="Ggy-Mq-RX5" detailTextLabel="7iN-cE-jjl" rowHeight="92" style="IBUITableViewCellStyleSubtitle" id="dK5-qt-M2n">
                                         <rect key="frame" x="0.0" y="28" width="375" height="92"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="dK5-qt-M2n" id="Zba-D8-kgW">

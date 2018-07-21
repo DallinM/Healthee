@@ -21,7 +21,7 @@ class MapViewController: UIViewController, UISearchBarDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        FirebaseApp.configure()
+        //FirebaseApp.configure()
         homeSearchBar.delegate = self
         
     }
