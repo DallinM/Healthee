@@ -13,7 +13,7 @@
         <!--Restaurant Overview View Controller-->
         <scene sceneID="00u-Gf-f4U">
             <objects>
-                <viewController storyboardIdentifier="RestaurantOverview" id="OAU-L2-H2x" customClass="RestaurantOverviewViewController" customModule="Healthee" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="OAU-L2-H2x" customClass="RestaurantOverviewViewController" customModule="Healthee" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5cC-rW-Od3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="1560"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

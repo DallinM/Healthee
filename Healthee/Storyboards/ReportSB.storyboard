@@ -19,10 +19,34 @@
         </array>
     </customFonts>
     <scenes>
+        <!--SearchSB-->
+        <scene sceneID="XTh-bC-KR7">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="SearchSB" storyboardName="SearchSB" id="f7S-GM-gHl" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QyW-GI-WLO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="396" y="436"/>
+        </scene>
+        <!--FavoritesSB-->
+        <scene sceneID="Q59-Mn-fhj">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="FavoritesSB" storyboardName="FavoritesSB" id="Qqz-zJ-Wye" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yXZ-Am-Hfh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="622" y="436"/>
+        </scene>
+        <!--LearnMoreSB-->
+        <scene sceneID="T4w-2g-aWV">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="LearnSB" storyboardName="LearnMoreSB" id="GFz-A2-J2h" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="H7M-KR-SUm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="832" y="436"/>
+        </scene>
         <!--Report View Controller-->
         <scene sceneID="ffE-vy-Yit">
             <objects>
-                <viewController id="VCg-g7-1eS" customClass="ReportViewController" customModule="Healthee" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ReportSB" id="VCg-g7-1eS" customClass="ReportViewController" customModule="Healthee" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="oxh-GN-4Xq">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -183,13 +207,62 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x1p-un-oHE">
+                                <rect key="frame" x="0.0" y="618" width="375" height="49"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="PiY-a7-8Lg">
+                                        <rect key="frame" x="0.0" y="2" width="375" height="47"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jE0-bo-pnR">
+                                                <rect key="frame" x="0.0" y="0.0" width="94" height="47"/>
+                                                <state key="normal" image="home"/>
+                                                <connections>
+                                                    <segue destination="f7S-GM-gHl" kind="show" animates="NO" id="sVP-FW-xuL"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xfC-D6-JfM">
+                                                <rect key="frame" x="94" y="0.0" width="93.5" height="47"/>
+                                                <state key="normal" image="favorites"/>
+                                                <connections>
+                                                    <segue destination="Qqz-zJ-Wye" kind="show" animates="NO" id="Beg-nR-2Mh"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iJe-rD-R2l">
+                                                <rect key="frame" x="187.5" y="0.0" width="94" height="47"/>
+                                                <state key="normal" image="learn"/>
+                                                <connections>
+                                                    <segue destination="GFz-A2-J2h" kind="show" animates="NO" id="2Y5-gM-AyE"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bMj-aN-Iyv">
+                                                <rect key="frame" x="281.5" y="0.0" width="93.5" height="47"/>
+                                                <state key="normal" image="report"/>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="47" id="4yF-oS-4EG"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.2784313725" green="0.2784313725" blue="0.2784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="PiY-a7-8Lg" secondAttribute="trailing" id="1nz-Nb-Xqr"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="49" id="8hg-MV-BH9"/>
+                                    <constraint firstItem="PiY-a7-8Lg" firstAttribute="leading" secondItem="x1p-un-oHE" secondAttribute="leading" id="M8i-w4-NSM"/>
+                                    <constraint firstAttribute="bottom" secondItem="PiY-a7-8Lg" secondAttribute="bottom" id="P1w-XS-GJV"/>
+                                    <constraint firstAttribute="height" constant="49" id="oXG-WM-mVR"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="VvH-Gz-H3K" firstAttribute="centerX" secondItem="JxZ-yg-7hm" secondAttribute="centerX" id="3ap-HY-giw"/>
+                            <constraint firstItem="x1p-un-oHE" firstAttribute="bottom" secondItem="JxZ-yg-7hm" secondAttribute="bottom" id="5XU-G0-jep"/>
                             <constraint firstItem="HRZ-DJ-fT2" firstAttribute="leading" secondItem="JxZ-yg-7hm" secondAttribute="leading" constant="22" id="65y-zy-hLd"/>
                             <constraint firstItem="JxZ-yg-7hm" firstAttribute="leading" secondItem="975-Nk-iJD" secondAttribute="trailing" constant="-219" id="7BU-wF-4li"/>
+                            <constraint firstItem="x1p-un-oHE" firstAttribute="leading" secondItem="oxh-GN-4Xq" secondAttribute="leading" id="Bnv-T7-F0w"/>
                             <constraint firstItem="QM8-YY-sik" firstAttribute="centerX" secondItem="JxZ-yg-7hm" secondAttribute="centerX" id="CiZ-Ci-8Vo"/>
+                            <constraint firstItem="JxZ-yg-7hm" firstAttribute="trailing" secondItem="x1p-un-oHE" secondAttribute="trailing" id="Cl8-2Q-iUy"/>
                             <constraint firstItem="QM8-YY-sik" firstAttribute="top" secondItem="oxh-GN-4Xq" secondAttribute="top" id="Kuq-cq-oBF"/>
                             <constraint firstItem="JxZ-yg-7hm" firstAttribute="bottom" secondItem="HRZ-DJ-fT2" secondAttribute="bottom" constant="81" id="MzX-30-tWx"/>
                             <constraint firstItem="HRZ-DJ-fT2" firstAttribute="top" secondItem="975-Nk-iJD" secondAttribute="bottom" constant="24" id="NAU-vU-8p3"/>
@@ -216,5 +289,9 @@
     <resources>
         <image name="ReportHeaderBack" width="414" height="134"/>
         <image name="ReportHeaderFront" width="414" height="141"/>
+        <image name="favorites" width="54" height="35"/>
+        <image name="home" width="33" height="36"/>
+        <image name="learn" width="32" height="36"/>
+        <image name="report" width="40" height="37"/>
     </resources>
 </document>
