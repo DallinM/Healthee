@@ -27,7 +27,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <containerView opaque="NO" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="a6A-jX-9yg">
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a6A-jX-9yg">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <connections>
                                     <segue destination="Lbt-fH-hpu" kind="embed" id="S2J-4i-Mou"/>
@@ -84,6 +84,7 @@
                             <constraint firstItem="sAV-ec-Jt5" firstAttribute="leading" secondItem="dLS-SV-Rjn" secondAttribute="leading" id="5FY-0t-lyf"/>
                             <constraint firstItem="HGD-Lw-Yc6" firstAttribute="centerX" secondItem="a6A-jX-9yg" secondAttribute="centerX" id="CzE-ef-SPk"/>
                             <constraint firstItem="HGD-Lw-Yc6" firstAttribute="top" secondItem="hIr-8i-snV" secondAttribute="top" constant="344" id="Rmo-eh-394"/>
+                            <constraint firstItem="a6A-jX-9yg" firstAttribute="bottom" secondItem="sAV-ec-Jt5" secondAttribute="bottom" id="XFq-ZN-q22"/>
                             <constraint firstAttribute="trailing" secondItem="a6A-jX-9yg" secondAttribute="trailing" id="fiq-WW-eU7"/>
                             <constraint firstItem="sAV-ec-Jt5" firstAttribute="bottom" secondItem="dLS-SV-Rjn" secondAttribute="bottom" id="gew-lY-YIk"/>
                             <constraint firstItem="a6A-jX-9yg" firstAttribute="leading" secondItem="hIr-8i-snV" secondAttribute="leading" id="gxN-xh-uXc"/>
@@ -99,7 +100,7 @@
                         <outlet property="drawerContentContainerView" destination="HGD-Lw-Yc6" id="utm-Ha-SC1"/>
                         <outlet property="primaryContentContainerView" destination="a6A-jX-9yg" id="xid-vv-x9H"/>
                         <outlet property="searchDisplayController" destination="Rxn-Ny-Wot" id="SGV-hy-CWp"/>
-                        <outlet property="tabBarView" destination="sAV-ec-Jt5" id="KIz-y7-baP"/>
+                        <outlet property="tabBarView" destination="sAV-ec-Jt5" id="lyg-24-f9M"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ms2-D4-qaz" userLabel="First Responder" sceneMemberID="firstResponder"/>
