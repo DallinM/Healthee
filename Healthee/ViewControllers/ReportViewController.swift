@@ -50,6 +50,11 @@ class ReportViewController: UIViewController, UITextViewDelegate {
         let time = convertTimeFormatter()
         timeTextField.text = time
         
+        let alertController = UIAlertController(title: "Thank You", message: "Thank you for submitting a report.", preferredStyle: .alert)
+        let doneAction = UIAlertAction(title: "Done", style: .default, handler: nil)
+        alertController.addAction(doneAction)
+        self.present(alertController, animated: true, completion: nil)
+        
     }
     
     func textView(_ textView: UITextView, shouldChangeTextIn range: NSRange, replacementText text: String) -> Bool {

@@ -42,9 +42,9 @@ class MapViewController: UIViewController, UISearchBarDelegate, MKMapViewDelegat
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-      
-        FirebaseApp.configure()
+
+        //FirebaseApp.configure()
+
         homeSearchBar.delegate = self
         requestLocationAccess()
         
