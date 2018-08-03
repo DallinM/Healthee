@@ -15,8 +15,7 @@ class OverviewViewController: PulleyViewController, UISearchBarDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        FirebaseApp.configure()
+    
     }
     
 }

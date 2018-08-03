@@ -1,9 +1,9 @@
 //
 //  ThreeInspectionsViewController.swift
-//  Healthee
+//  FirstRoundTest
 //
-//  Created by Caston  Boyd on 7/19/18.
-//  Copyright © 2018 Dallin McConnell. All rights reserved.
+//  Created by Caston  Boyd on 7/17/18.
+//  Copyright © 2018 Caston  Boyd. All rights reserved.
 //
 
 import UIKit
@@ -39,18 +39,24 @@ class ThreeInspectionsViewController: UIViewController {
     func updateViews() {
         
         //MARK: - latest, most recent inspection date is first
+        firstRecentInspectionDateLabel.text = "\(String(MapViewController.firstInspectionDate))"
         
-        firstRecentInspectionDateLabel.text = "\(String(OverviewModelController.sharedController.firstInspectionDate))"
-        firstRecentMajorViolationLabel.text = " Major: \(String(OverviewModelController.sharedController.firstDateMajorNumber))"
-        firstRecentMinorViolationLabel.text = "Minor: \(String(OverviewModelController.sharedController.firstDateMinorNumber))"
+        firstRecentMajorViolationLabel.text = " Major: \(String(MapViewController.firstDateMajorNumber))"
+        
+        firstRecentMinorViolationLabel.text = "Minor: \(String(MapViewController.firstDateMinorNumber))"
         
         //MARK: - Second most recent
-        secondRecentInspectionDateLabel.text = "\(String(OverviewModelController.sharedController.secondInspectionDate))"
-        secondRecentMajorViolationLabel.text = "Major: \(String(OverviewModelController.sharedController.secondDateMajorNumber))"
-        secondRecentMinorViolationLabel.text = "Minor: \(String(OverviewModelController.sharedController.secondDateMinorNumber))"
+        secondRecentInspectionDateLabel.text = "\(String(MapViewController.secondInspectionDate))"
         
+        secondRecentMajorViolationLabel.text = "Major: \(String(MapViewController.secondDateMajorNumber))"
         
+        secondRecentMinorViolationLabel.text = "Minor: \(String(MapViewController.secondDateMinorNumber))"
         
+        //MARK: - Third most recent
+        secondRecentInspectionDateLabel.text = "\(String(MapViewController.thirdInspectionDate))"
         
+        secondRecentMajorViolationLabel.text = "Major: \(String(MapViewController.thirdDateMajorNumber))"
+        
+        secondRecentMinorViolationLabel.text = "Minor: \(String(MapViewController.thirdDateMinorNumber))"
     }
 }

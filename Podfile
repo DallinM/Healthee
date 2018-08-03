@@ -11,4 +11,5 @@ target 'Healthee' do
   pod 'Material', '~> 2.0'
   pod 'Pulley'
   pod 'Canvas', '~> 0.1.2'
+  pod 'November'
 end
