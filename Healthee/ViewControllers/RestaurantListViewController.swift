@@ -1,9 +1,9 @@
 //
 //  RestaurantListViewController.swift
-//  Healthee
+//  FirstRoundTest
 //
-//  Created by Caston  Boyd on 7/12/18.
-//  Copyright © 2018 Dallin McConnell. All rights reserved.
+//  Created by Caston  Boyd on 7/8/18.
+//  Copyright © 2018 Caston  Boyd. All rights reserved.
 //
 
 import UIKit
@@ -15,9 +15,7 @@ class RestaurantListViewController: UIViewController, UITableViewDelegate, UITab
     
     @IBAction func unwindToRestaurantListController(segue:UIStoryboardSegue) {
         
-        self.reloadTableView()
     }
-    
     
     
     
@@ -37,14 +35,15 @@ class RestaurantListViewController: UIViewController, UITableViewDelegate, UITab
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        NotificationCenter.default.addObserver(self, selector: #selector(reloadTableView), name: MapViewController.RestaurantNotification.notificationSet, object: nil)
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(reloadTableView), name: MapViewController.RestaurantAddressNotification.notificationSetforAddress, object: nil)
         
         
         restaurantListTableView.dataSource = self
         restaurantListTableView.delegate = self
         
-        NotificationCenter.default.addObserver(self, selector: #selector(reloadTableView), name: OverviewModelController.RestaurantNotification.notificationSet, object: nil)
         
-        print(OverviewModelController.sharedController.restaurantList.count)
         
     }
     
@@ -96,7 +95,7 @@ class RestaurantListViewController: UIViewController, UITableViewDelegate, UITab
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        return OverviewModelController.sharedController.restaurantList.count
+        return MapViewController.tableViewNameArray.count
         
     }
     
@@ -106,18 +105,19 @@ class RestaurantListViewController: UIViewController, UITableViewDelegate, UITab
         
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "restaurantListCell", for: indexPath) as? RestaurantListTableViewCell else { return UITableViewCell() }
         
-        let restaurantForCell = OverviewModelController.sharedController.restaurantList[indexPath.row]
+        let restaurantForName = MapViewController.tableViewNameArray[indexPath.row]
+        let restaurantForAddress = MapViewController.tableViewAddressArray[indexPath.row]
         
-        cell.restaurant = restaurantForCell
+        cell.nameOfRestaurant = restaurantForName
+        cell.addressOfRestaurant = restaurantForAddress
         
         return cell
         
     }
     
     @objc func reloadTableView() {
-        DispatchQueue.main.async {
-            self.restaurantListTableView.reloadData()
-        }
+        
+        self.restaurantListTableView.reloadData()
     }
 }
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -188,7 +188,3 @@ extension RestaurantListViewController: PulleyDrawerViewControllerDelegate {
 //        topGripperConstraint.isActive = drawer.currentDisplayMode == .bottomDrawer
 //    }
 //}
-
-
-
-

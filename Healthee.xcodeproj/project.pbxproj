@@ -218,14 +218,12 @@
 				30EC254C20E446D6005A5305 /* ReportViewController.swift */,
 				719261F220F7FC5200470274 /* RestaurantListViewController.swift */,
 				719261F620F7FD2A00470274 /* HomeMapViewController.swift */,
-
 				71FC95CA21013618009D52FF /* ViolationsOverviewViewController.swift */,
 				71FC95CC21013642009D52FF /* ReoccurringViolationsViewController.swift */,
 				71FC95CE2101365F009D52FF /* ThreeInspectionsViewController.swift */,
 				71FC95D0210136A2009D52FF /* MainViewController.swift */,
 				71FC95D2210136B2009D52FF /* MainPageViewController.swift */,
 				71FC95D4210136C4009D52FF /* SegueToOverviewFrmCell.swift */,
-
 				30A197CD20FDC3BA003A4F1D /* FavoritesViewController.swift */,
 				30A197D120FE80EF003A4F1D /* MajorViolationsViewController.swift */,
 				30A197D520FE822D003A4F1D /* MinorViolationsViewController.swift */,
@@ -375,6 +373,7 @@
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/Material/Material.framework",
 				"${BUILT_PRODUCTS_DIR}/Motion/Motion.framework",
+				"${BUILT_PRODUCTS_DIR}/November/November.framework",
 				"${BUILT_PRODUCTS_DIR}/Pulley/Pulley.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
@@ -385,6 +384,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Material.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Motion.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/November.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Pulley.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
@@ -420,7 +420,6 @@
 				30A197B720F400D0003A4F1D /* ReportView.swift in Sources */,
 				71FC95D1210136A2009D52FF /* MainViewController.swift in Sources */,
 				719261FF20F7FE9C00470274 /* TabBarDesignable.swift in Sources */,
-
 				71FC95CB21013618009D52FF /* ViolationsOverviewViewController.swift in Sources */,
 				30A197CE20FDC3BA003A4F1D /* FavoritesViewController.swift in Sources */,
 				719261F320F7FC5200470274 /* RestaurantListViewController.swift in Sources */,

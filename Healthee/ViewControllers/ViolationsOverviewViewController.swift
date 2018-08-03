@@ -1,9 +1,9 @@
 //
 //  ViolationsOverviewViewController.swift
-//  Healthee
+//  FirstRoundTest
 //
-//  Created by Caston  Boyd on 7/19/18.
-//  Copyright © 2018 Dallin McConnell. All rights reserved.
+//  Created by Caston  Boyd on 7/17/18.
+//  Copyright © 2018 Caston  Boyd. All rights reserved.
 //
 
 import UIKit
@@ -23,12 +23,11 @@ class ViolationsOverviewViewController: UIViewController {
     
     func updateViews() {
         
-        majorViolationsLabel.text = "\(String(OverviewModelController.sharedController.firstDateMajorNumber))"
+        majorViolationsLabel.text = "\(String(MapViewController.firstDateMajorNumber))"
         
-        minorViolationsLabel.text = "\(String(OverviewModelController.sharedController.firstDateMinorNumber))"
-        dateOfLastInspection.text = "As of \(OverviewModelController.sharedController.firstInspectionDate)"
+        minorViolationsLabel.text = "\(String(MapViewController.firstDateMinorNumber))"
+        dateOfLastInspection.text = "As of \(MapViewController.firstInspectionDate)"
         
     }
     
 }
-
